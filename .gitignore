@@ -3,3 +3,4 @@ bf
 out
 out.c
 *.s
+._*
