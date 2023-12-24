@@ -1,0 +1,23 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "BrainFuck++",
+	"patterns": [
+		{"include": "#keywords"},
+		{"include": "#numbers"}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control",
+				"match": "[\\.|,|/|\\+|-|\\[|\\]|\\(|\\)|?|!|<|>]"
+			}]
+		},
+		"numbers": {
+			"patterns": [{
+				"name": "constant.numeric",
+				"match": "([=|:|;|#][\\+|-]?[0-9]+)"
+			}]
+		}
+	},
+	"scopeName": "source.bfpp"
+}

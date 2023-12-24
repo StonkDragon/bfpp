@@ -1,0 +1,27 @@
+{
+  "name": "bfpp",
+  "displayName": "BrainF*ck++",
+  "description": "",
+  "version": "0.0.1",
+  "repository": {},
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "brainfuckpp",
+      "aliases": ["BrainFuck++", "brainfuckpp"],
+      "extensions": ["bf++","bfpp"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "brainfuckpp",
+      "scopeName": "source.bfpp",
+      "path": "./syntaxes/brainfuckpp.tmLanguage.json"
+    }]
+  }
+}
