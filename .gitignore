@@ -4,3 +4,4 @@ out
 out.c
 *.s
 ._*
+.DS_Store
